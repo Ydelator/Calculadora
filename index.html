@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Calculadora</h1>
+        <div class="calculadora">
+            <label class="label1">Digite el primer numero</label>
+            <input type="number" id="numero1" class="numero1">
+            <select id="select" class="select">
+                <option class="opcion" value="+">+</option>
+                <option class="opcion" value="-">-</option>
+                <option class="opcion" value="*">*</option>
+                <option class="opcion" value="/">/</option>
+            </select>
+            <label class="label2">Digite el segundo numero</label>
+            <input type="number" id="numero2" class="numero2">
+            <button class="calcular" id="calcular" onclick="calcular()">Calcular</button>
+            
+        </div>
+        <h1 id="total" class="total"></h1>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
